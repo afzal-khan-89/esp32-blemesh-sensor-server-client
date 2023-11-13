@@ -1,0 +1,33 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/bootloader/esp-idf/esptool_py && /home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ahkhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/bootloader/bootloader.bin
+Bootloader binary size 0x6820 bytes. 0x7e0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+../main/main.c: In function 'example_ble_mesh_sensor_client_cb':
+../main/main.c:500:26: warning: unused variable 'node' [-Wunused-variable]
+  500 |     esp_ble_mesh_node_t *node = NULL;
+      |                          ^~~~
+../main/main.c: In function 'ble_mesh_init':
+../main/main.c:668:13: warning: unused variable 'match' [-Wunused-variable]
+  668 |     uint8_t match[2] = { 0x32, 0x10 };
+      |             ^~~~~
+../main/main.c: At top level:
+../main/main.c:127:13: warning: 'example_ble_mesh_set_msg_common' defined but not used [-Wunused-function]
+  127 | static void example_ble_mesh_set_msg_common(esp_ble_mesh_client_common_param_t *common,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main/main.c:67:17: warning: 'server_address' defined but not used [-Wunused-variable]
+   67 | static uint16_t server_address = ESP_BLE_MESH_ADDR_UNASSIGNED;
+      |                 ^~~~~~~~~~~~~~
+../main/main.c:49:17: warning: 'SUBSCRIPTION_ADDR' defined but not used [-Wunused-variable]
+   49 | static uint16_t SUBSCRIPTION_ADDR ;
+      |                 ^~~~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable sensor_client.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/sensor_client.bin
+[7/7] cd /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/esp-idf/esptool_py && /home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ahkhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/partition_table/partition-table.bin /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/sensor_client.bin
+sensor_client.bin binary size 0xedc00 bytes. Smallest app partition is 0x100000 bytes. 0x12400 bytes (7%) free.

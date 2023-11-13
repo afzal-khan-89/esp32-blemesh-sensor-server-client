@@ -1,0 +1,174 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7080
+load:0x40078000,len:15604
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 13 2023 21:19:31[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2caf4h (183028) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=0003cb1c vaddr=3ffbdb60 size=034fch ( 13564) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a3e0ch (671244) map[0m
+[0;32mI (366) esp_image: segment 3: paddr=000e3e34 vaddr=3ffc105c size=01888h (  6280) load[0m
+[0;32mI (368) esp_image: segment 4: paddr=000e56c4 vaddr=40080000 size=184f4h ( 99572) load[0m
+[0;32mI (419) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (419) boot: Disabling RNG early entropy source...[0m
+[0;32mI (431) cpu_start: Multicore app[0m
+[0;32mI (431) cpu_start: Pro cpu up.[0m
+[0;32mI (431) cpu_start: Starting app cpu, entry point is 0x40081378[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (449) cpu_start: Pro cpu start user code[0m
+[0;32mI (449) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (449) cpu_start: Application information:[0m
+[0;32mI (454) cpu_start: Project name:     sensor_client[0m
+[0;32mI (459) cpu_start: App version:      1[0m
+[0;32mI (464) cpu_start: Compile time:     Nov 13 2023 21:29:05[0m
+[0;32mI (470) cpu_start: ELF file SHA256:  88e9729af9649518...[0m
+[0;32mI (476) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (481) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (485) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (490) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (495) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (502) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFCA0F8 len 00015F08 (87 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (539) heap_init: At 400984F4 len 00007B0C (30 KiB): IRAM[0m
+[0;32mI (547) spi_flash: detected chip: generic[0m
+[0;32mI (550) spi_flash: flash io: dio[0m
+[0;32mI (555) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (560) app_start: Starting scheduler on CPU0[0m
+[0[0;32mI (564) app_start: Starting scheduler on CPU1[0m
+;32mI (564) main_task: Started on CPU0[0m
+[0;32mI (574) main_task: Calling app_main()[0m
+[0;32mI (574) EXAMPLE: Initializing...[0m
+use esp timer !!!
+[0;31mE (614) esp_timer: Task is already initialized[0m
+[0;32mI (614) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (614) BTDM_INIT: BT controller compile version [946b762][0m
+[0;32mI (624) BTDM_INIT: Bluetooth MAC: b8:d6:1a:ab:d1:9a[0m
+[0;32mI (634) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1114) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;31mE (1114) EXAMPLE_NVS: Restore, nvs_get_blob failed, err 4359[0m
+[0;32mI (1114) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (1124) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1124) main_task: Returned from app_main()[0m
+[0;31mE (38024) BT_GATT: GATT_SendServiceChangeIndication can't send service change indication manually, please configure the option through menuconfig[0m
+[0;32mI (38704) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (51694) BLE_MESH: No Health Server context provided[0m
+[0;33mW (53014) BLE_MESH: No Health Server context provided[0m
+[0;31mE (53034) BT_GATT: GATT_SendServiceChangeIndication can't send service change indication manually, please configure the option through menuconfig[0m
+[0;32mI (53044) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (53054) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (53054) EXAMPLE: net_idx: 0x0000, addr: 0x00d2[0m
+[0;32mI (53054) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;33mW (54154) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;31mE (56994) BT_GATT: GATT_SendServiceChangeIndication can't send service change indication manually, please configure the option through menuconfig[0m
+[0;33mW (60384) BLE_MESH: No matching TX context for ack[0m
+[0;32mI (63994) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (63994) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (64004) AppKey: b3 b3 ee 0a b2 08 3f c8 3d 5d 39 ea 40 7e ac 2f [0m
+[0;32mI (76624) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (76624) EXAMPLE: elem_addr 0x00d2, app_idx 0x0000, cid 0xffff, mod_id 0x1102[0m
+[0;32mI (83304) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD[0m
+[0;32mI (83304) EXAMPLE: elem_addr 0x00d2, sub_addr 0xc000, cid 0xffff, mod_id 0x1102[0m
+[0;33mW (103484) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (150184) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (150184) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (150184) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (150184) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (150194) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (150194) Sensor Data: 0f [0m
+[0;32mI (150204) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (150204) Sensor Data: 00 [0m
+[0;32mI (150384) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (150384) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (150384) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (150384) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (150394) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (150394) Sensor Data: 0f [0m
+[0;32mI (150404) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (150404) Sensor Data: 00 [0m
+[0;32mI (170184) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (170184) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (170184) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (170184) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (170194) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (170194) Sensor Data: 0f [0m
+[0;32mI (170204) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (170204) Sensor Data: 00 [0m
+[0;32mI (170384) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (170384) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (170384) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (170384) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (170394) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (170394) Sensor Data: 0f [0m
+[0;32mI (170404) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (170404) Sensor Data: 00 [0m
+[0;32mI (190224) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (190224) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (190224) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (190224) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (190234) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (190234) Sensor Data: 0f [0m
+[0;32mI (190244) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (190244) Sensor Data: 00 [0m
+[0;32mI (190384) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (190384) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (190384) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (190384) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (190394) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (190394) Sensor Data: 0f [0m
+[0;32mI (190404) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (190404) Sensor Data: 00 [0m
+[0;32mI (210184) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (210184) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (210184) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (210184) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (210194) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (210194) Sensor Data: 0f [0m
+[0;32mI (210204) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (210204) Sensor Data: 00 [0m
+[0;32mI (210384) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (210384) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (210384) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (210384) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (210394) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (210394) Sensor Data: 0f [0m
+[0;32mI (210404) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (210404) Sensor Data: 00 [0m
+[0;32mI (230184) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (230184) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (230184) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (230184) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (230194) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (230194) Sensor Data: 0f [0m
+[0;32mI (230204) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (230204) Sensor Data: 00 [0m
+[0;32mI (230384) EXAMPLE: Sensor client, event 2  addr 0x00d3  [0m
+[0;32mI (230384) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (230384) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (230384) Sensor Data: c0 0a 0f 60 0b 00 [0m
+[0;32mI (230394) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (230394) Sensor Data: 0f [0m
+[0;32mI (230404) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (230404) Sensor Data: 00 [0m

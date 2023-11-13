@@ -1,0 +1,73 @@
+[1/5] cd /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/esp-idf/esptool_py && /home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ahkhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/partition_table/partition-table.bin /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/sensor_client.bin
+sensor_client.bin binary size 0xedb20 bytes. Smallest app partition is 0x100000 bytes. 0x124e0 bytes (7%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/bootloader/esp-idf/esptool_py && /home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ahkhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/bootloader/bootloader.bin
+Bootloader binary size 0x6820 bytes. 0x7e0 bytes (7%) free.
+[2/3] cd /home/ahkhan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ahkhan/esp/esp-idf -D "SERIAL_TOOL=/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/ahkhan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build -P /home/ahkhan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 sensor_client.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev2
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b8:d6:1a:ab:d1:98
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fdfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26656 bytes to 16676...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076ac... (100 %)
+Wrote 26656 bytes (16676 compressed) at 0x00001000 in 0.9 seconds (effective 248.9 kbit/s)...
+Hash of data verified.
+Compressed 973600 bytes to 561670...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d4c0... (5 %)
+Writing at 0x0002c4d0... (8 %)
+Writing at 0x0003a7c6... (11 %)
+Writing at 0x0004429c... (14 %)
+Writing at 0x00049d46... (17 %)
+Writing at 0x0004f476... (20 %)
+Writing at 0x00054aaa... (22 %)
+Writing at 0x0005aff9... (25 %)
+Writing at 0x00060602... (28 %)
+Writing at 0x0006663c... (31 %)
+Writing at 0x0006c3a7... (34 %)
+Writing at 0x00071d9c... (37 %)
+Writing at 0x000775e2... (40 %)
+Writing at 0x0007d2df... (42 %)
+Writing at 0x000835c4... (45 %)
+Writing at 0x00089fb1... (48 %)
+Writing at 0x0009014f... (51 %)
+Writing at 0x00097d21... (54 %)
+Writing at 0x0009e57e... (57 %)
+Writing at 0x000a42e6... (60 %)
+Writing at 0x000aa381... (62 %)
+Writing at 0x000b00d1... (65 %)
+Writing at 0x000b6487... (68 %)
+Writing at 0x000bc6b1... (71 %)
+Writing at 0x000c20c0... (74 %)
+Writing at 0x000c7be5... (77 %)
+Writing at 0x000cd478... (80 %)
+Writing at 0x000d636d... (82 %)
+Writing at 0x000ddbc8... (85 %)
+Writing at 0x000e4d2f... (88 %)
+Writing at 0x000eabb7... (91 %)
+Writing at 0x000f07cd... (94 %)
+Writing at 0x000f62e5... (97 %)
+Writing at 0x000fbe08... (100 %)
+Wrote 973600 bytes (561670 compressed) at 0x00010000 in 13.2 seconds (effective 590.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 311.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

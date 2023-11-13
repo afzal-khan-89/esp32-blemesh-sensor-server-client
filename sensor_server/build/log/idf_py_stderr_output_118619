@@ -1,0 +1,343 @@
+[0;33m--- esp-idf-monitor 1.3.3 on /dev/ttyUSB1 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d89fc: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400d8a03: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d8a00: custom_ble_mesh_send_sensor_readings at /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_server/build/../main/main.c:455 (discriminator 3)
+[0m
+[0;33m0x400936a1: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

@@ -1,0 +1,79 @@
+[1/5] cd /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/esp-idf/esptool_py && /home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ahkhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/partition_table/partition-table.bin /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/sensor_client.bin
+sensor_client.bin binary size 0xedc00 bytes. Smallest app partition is 0x100000 bytes. 0x12400 bytes (7%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/bootloader/esp-idf/esptool_py && /home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ahkhan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build/bootloader/bootloader.bin
+Bootloader binary size 0x6820 bytes. 0x7e0 bytes (7%) free.
+[2/3] cd /home/ahkhan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ahkhan/esp/esp-idf -D "SERIAL_TOOL=/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/ahkhan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build -P /home/ahkhan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB1 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 sensor_client.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev2
+Serial port /dev/ttyUSB1
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b8:d6:1a:ab:d1:98
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fdfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26656 bytes to 16676...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076ac... (100 %)
+Wrote 26656 bytes (16676 compressed) at 0x00001000 in 0.8 seconds (effective 259.8 kbit/s)...
+Hash of data verified.
+Compressed 973824 bytes to 561719...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d4de... (5 %)
+Writing at 0x0002c546... (8 %)
+Writing at 0x0003a786... (11 %)
+Writing at 0x00044280... (14 %)
+Writing at 0x00049d6a... (17 %)
+Writing at 0x0004f4b0... (20 %)
+Writing at 0x00054af4... (22 %)
+Writing at 0x0005b056... (25 %)
+Writing at 0x00060662... (28 %)
+Writing at 0x00066677... (31 %)
+Writing at 0x0006c429... (34 %)
+Writing at 0x00071e31... (37 %)
+Writing at 0x00077679... (40 %)
+Writing at 0x0007d383... (42 %)
+Writing at 0x0008362c... (45 %)
+Writing at 0x0008a042... (48 %)
+Writing at 0x000901e8... (51 %)
+Writing at 0x00097d59... (54 %)
+Writing at 0x0009e620... (57 %)
+Writing at 0x000a4382... (60 %)
+Writing at 0x000aa405... (62 %)
+Writing at 0x000b0178... (65 %)
+Writing at 0x000b6535... (68 %)
+Writing at 0x000bc746... (71 %)
+Writing at 0x000c216d... (74 %)
+Writing at 0x000c7c67... (77 %)
+Traceback (most recent call last):
+  File "/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/__init__.py", line 1101, in _main
+    main()
+  File "/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/__init__.py", line 889, in main
+    operation_func(esp, args)
+  File "/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/cmds.py", line 596, in write_flash
+    esp.flash_defl_block(block, seq, timeout=timeout)
+  File "/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 131, in inner
+    return func(*args, **kwargs)
+  File "/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 1040, in flash_defl_block
+    self.check_command(
+  File "/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 439, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+  File "/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 408, in command
+    p = self.read()
+  File "/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 341, in read
+    return next(self._slip_reader)
+StopIteration
+
+A fatal error occurred: The chip stopped responding.
+FAILED: CMakeFiles/flash 
+cd /home/ahkhan/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ahkhan/esp/esp-idf -D "SERIAL_TOOL=/home/ahkhan/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/ahkhan/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build -P /home/ahkhan/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

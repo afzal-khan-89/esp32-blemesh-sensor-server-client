@@ -1,0 +1,77 @@
+[0;33m--- esp-idf-monitor 1.3.3 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40081a1e: panic_abort at /home/ahkhan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40090f39: esp_system_abort at /home/ahkhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x400965ba: abort at /home/ahkhan/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40081a1e: panic_abort at /home/ahkhan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40090f39: esp_system_abort at /home/ahkhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x400965ba: abort at /home/ahkhan/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40081a1e: panic_abort at /home/ahkhan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40090f39: esp_system_abort at /home/ahkhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x400965ba: abort at /home/ahkhan/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40081a1e: panic_abort at /home/ahkhan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40090f39: esp_system_abort at /home/ahkhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x400965ba: abort at /home/ahkhan/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40081a1e: panic_abort at /home/ahkhan/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40090f39: esp_system_abort at /home/ahkhan/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x400965ba: abort at /home/ahkhan/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40093697: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:166
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

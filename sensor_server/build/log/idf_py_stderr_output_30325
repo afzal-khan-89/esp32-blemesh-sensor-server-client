@@ -1,0 +1,33 @@
+[0;33m--- esp-idf-monitor 1.3.3 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d41c6: panic_handler at /home/ahkhan/esp/esp-idf/components/esp_system/port/panic_handler.c:139 (discriminator 2)
+[0m
+[0;33m0x40081a7d: panicHandler at /home/ahkhan/esp/esp-idf/components/esp_system/port/panic_handler.c:217
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7efc: hli_queue_create at /home/ahkhan/esp/esp-idf/components/bt/controller/esp32/hli_api.c:221
+[0m
+[0;33m0x400d7f03: hli_queue_create at /home/ahkhan/esp/esp-idf/components/bt/controller/esp32/hli_api.c:222
+[0m
+[0;33m0x400d7f00: hli_queue_create at /home/ahkhan/esp/esp-idf/components/bt/controller/esp32/hli_api.c:222
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d7f00: hli_queue_create at /home/ahkhan/esp/esp-idf/components/bt/controller/esp32/hli_api.c:222
+[0m
+[0;33m0x40093679: vPortTaskWrapper at /home/ahkhan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081374: call_start_cpu1 at /home/ahkhan/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m
