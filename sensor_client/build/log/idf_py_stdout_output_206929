@@ -127,4 +127,32 @@ use esp timer !!!
 [0;32mI (196614) EXAMPLE: Sensor client, event 2  addr 0x00d7  [0m
 [0;32mI (196614) EXAMPLE:  opcode 0x0052[0m
 [0;32mI (196614) EXAMPLE: Sensor Status, opcode 0x0052[0m
-[0;32mI (196614) Sen
+[0;32mI (196614) Sensor Data: c0 0a 07 60 0b 00 [0m
+[0;32mI (196624) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (196634) Sensor Data: 07 [0m
+[0;32mI (196634) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (196644) Sensor Data: 00 [0m
+[0;32mI (196814) EXAMPLE: Sensor client, event 2  addr 0x00d7  [0m
+[0;32mI (196814) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (196814) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (196814) Sensor Data: c0 0a 07 60 0b 00 [0m
+[0;32mI (196824) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (196834) Sensor Data: 07 [0m
+[0;32mI (196834) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (196844) Sensor Data: 00 [0m
+[0;32mI (216614) EXAMPLE: Sensor client, event 2  addr 0x00d7  [0m
+[0;32mI (216614) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (216614) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (216614) Sensor Data: c0 0a 07 60 0b 00 [0m
+[0;32mI (216624) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (216634) Sensor Data: 07 [0m
+[0;32mI (216634) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (216644) Sensor Data: 00 [0m
+[0;32mI (216814) EXAMPLE: Sensor client, event 2  addr 0x00d7  [0m
+[0;32mI (216814) EXAMPLE:  opcode 0x0052[0m
+[0;32mI (216814) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (216814) Sensor Data: c0 0a 07 60 0b 00 [0m
+[0;32mI (216824) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (216834) Sensor Data: 07 [0m
+[0;32mI (216834) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (216844) Sensor Data: 00 [0m

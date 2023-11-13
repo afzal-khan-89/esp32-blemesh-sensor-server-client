@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "sensor_client",
-    "project_version":    "1",
+    "project_version":    "e2d623f-dirty",
     "project_path":       "/home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client",
     "idf_path":           "/home/ahkhan/esp/esp-idf",
     "build_dir":          "/home/ahkhan/esp/projects/ble_mesh_sensor_model/sensor_client/build",
