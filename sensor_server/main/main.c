@@ -409,8 +409,8 @@ static uint16_t example_ble_mesh_get_sensor_data(esp_ble_mesh_sensor_state_t *st
 
 void custom_ble_mesh_send_sensor_readings(int8_t s) {
 	// Set the new Motion State
-	net_buf_simple_reset(&sensor_data_0);
-	net_buf_simple_add_u8(&sensor_data_0, s);
+	//net_buf_simple_reset(&sensor_data_0);
+	//net_buf_simple_add_u8(&sensor_data_0, s);
 	ESP_LOGI(TAG, "Sensor Reading: %d", s);
 	
 	// Prep the data to be sent
@@ -661,9 +661,15 @@ static void example_ble_mesh_sensor_server_cb(esp_ble_mesh_sensor_server_cb_even
 void update_sensor_status(uint8_t h, uint8_t t)
 {
     ESP_LOGE(TAG, "Temp : %d    Hum : %d", t, h);
-    net_buf_simple_add_u8(&sensor_data_0, t);
-    net_buf_simple_add_u8(&sensor_data_1, t);
-    custom_ble_mesh_send_sensor_readings(7);
+
+      net_buf_simple_reset(&sensor_data_0);
+     net_buf_simple_reset(&sensor_data_1);
+
+     net_buf_simple_add_u8(&sensor_data_0, 9);
+     net_buf_simple_add_u8(&sensor_data_1, 9);
+
+
+     custom_ble_mesh_send_sensor_readings(7);
 }
 
 static esp_err_t ble_mesh_init(void)
@@ -725,5 +731,6 @@ void app_main(void)
     }
 
     bt_mesh_set_device_name("sensor-server");  
+
     Init_TempHumiditySensor(&update_sensor_status);
 }

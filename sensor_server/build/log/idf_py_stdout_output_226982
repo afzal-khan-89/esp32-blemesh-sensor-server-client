@@ -1,0 +1,1217 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7080
+load:0x40078000,len:15604
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (28) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Nov 13 2023 18:51:24[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb9ch (179100) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0003bbc4 vaddr=3ffbdb60 size=04454h ( 17492) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a0568h (656744) map[0m
+[0;32mI (360) esp_image: segment 3: paddr=000e0590 vaddr=3ffc1fb4 size=00a40h (  2624) load[0m
+[0;32mI (361) esp_image: segment 4: paddr=000e0fd8 vaddr=40080000 size=18358h ( 99160) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu up.[0m
+[0;32mI (425) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) cpu_start: Application information:[0m
+[0;32mI (448) cpu_start: Project name:     sensor_server[0m
+[0;32mI (453) cpu_start: App version:      1[0m
+[0;32mI (458) cpu_start: Compile time:     Nov 13 2023 18:51:19[0m
+[0;32mI (464) cpu_start: ELF file SHA256:  eaf4ee83d83ddbdf...[0m
+[0;32mI (470) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (474) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (479) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (484) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (489) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (496) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (502) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFCA1E8 len 00015E18 (87 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 40098358 len 00007CA8 (31 KiB): IRAM[0m
+[0;32mI (540) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;32mI (549) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (554) app_start: Starting scheduler on CPU0[0m
+[0[0;32mI (558) app_start: Starting scheduler on CPU1[0m
+;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+[0;32mI (568) EXAMPLE: Initializing...[0m
+[0;32mI (588) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (588) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (598) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) BTDM_INIT: BT controller compile version [946b762][0m
+[0;32mI (618) BTDM_INIT: Bluetooth MAC: 0c:b8:15:c4:5d:da[0m
+[0;32mI (618) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1118) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1118) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1118) main_task: Returned from app_main()[0m
+[0;32mI (1128) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1118) DHT: Starting DHT Task
+
+[0m
+[0;31mE (1138) DHT: Sensor Timeout
+[0m
+[0;31mE (1138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (2138) DHT: Sensor Timeout
+[0m
+[0;31mE (2138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (3138) DHT: Sensor Timeout
+[0m
+[0;31mE (3138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (4138) DHT: Sensor Timeout
+[0m
+[0;31mE (4138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (5138) DHT: Sensor Timeout
+[0m
+[0;31mE (5138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (6138) DHT: Sensor Timeout
+[0m
+[0;31mE (6138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (7138) DHT: Sensor Timeout
+[0m
+[0;31mE (7138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (8138) DHT: Sensor Timeout
+[0m
+[0;31mE (8138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (9138) DHT: Sensor Timeout
+[0m
+[0;31mE (9138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (10138) DHT: Sensor Timeout
+[0m
+[0;31mE (10138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (11138) DHT: Sensor Timeout
+[0m
+[0;31mE (11138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (12138) DHT: Sensor Timeout
+[0m
+[0;31mE (12138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (13138) DHT: Sensor Timeout
+[0m
+[0;31mE (13138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (14138) DHT: Sensor Timeout
+[0m
+[0;31mE (14138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (15138) DHT: Sensor Timeout
+[0m
+[0;31mE (15138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (16138) DHT: Sensor Timeout
+[0m
+[0;31mE (16138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (17138) DHT: Sensor Timeout
+[0m
+[0;31mE (17138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (18138) DHT: Sensor Timeout
+[0m
+[0;31mE (18138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (19138) DHT: Sensor Timeout
+[0m
+[0;31mE (19138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (20138) DHT: Sensor Timeout
+[0m
+[0;31mE (20138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (21138) DHT: Sensor Timeout
+[0m
+[0;31mE (21138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (22138) DHT: Sensor Timeout
+[0m
+[0;31mE (22138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (23138) DHT: Sensor Timeout
+[0m
+[0;31mE (23138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (24138) DHT: Sensor Timeout
+[0m
+[0;31mE (24138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (25138) DHT: Sensor Timeout
+[0m
+[0;31mE (25138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (26138) DHT: Sensor Timeout
+[0m
+[0;31mE (26138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (27138) DHT: Sensor Timeout
+[0m
+[0;31mE (27138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (28138) DHT: Sensor Timeout
+[0m
+[0;31mE (28138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (29138) DHT: Sensor Timeout
+[0m
+[0;31mE (29138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (30138) DHT: Sensor Timeout
+[0m
+[0;31mE (30138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (31138) DHT: Sensor Timeout
+[0m
+[0;31mE (31138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (32138) DHT: Sensor Timeout
+[0m
+[0;31mE (32138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (33138) DHT: Sensor Timeout
+[0m
+[0;31mE (33138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (34138) DHT: Sensor Timeout
+[0m
+[0;31mE (34138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (35138) DHT: Sensor Timeout
+[0m
+[0;31mE (35138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (36138) DHT: Sensor Timeout
+[0m
+[0;31mE (36138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (37138) DHT: Sensor Timeout
+[0m
+[0;31mE (37138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (38138) DHT: Sensor Timeout
+[0m
+[0;31mE (38138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (39138) DHT: Sensor Timeout
+[0m
+[0;31mE (39138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (40138) DHT: Sensor Timeout
+[0m
+[0;31mE (40138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (41138) DHT: Sensor Timeout
+[0m
+[0;31mE (41138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (42138) DHT: Sensor Timeout
+[0m
+[0;31mE (42138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (43138) DHT: Sensor Timeout
+[0m
+[0;31mE (43138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (44138) DHT: Sensor Timeout
+[0m
+[0;31mE (44138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (45138) DHT: Sensor Timeout
+[0m
+[0;31mE (45138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (46138) DHT: Sensor Timeout
+[0m
+[0;31mE (46138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (47138) DHT: Sensor Timeout
+[0m
+[0;31mE (47138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (48138) DHT: Sensor Timeout
+[0m
+[0;31mE (48138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (49138) DHT: Sensor Timeout
+[0m
+[0;31mE (49138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (50138) DHT: Sensor Timeout
+[0m
+[0;31mE (50138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (51138) DHT: Sensor Timeout
+[0m
+[0;31mE (51138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (52138) DHT: Sensor Timeout
+[0m
+[0;31mE (52138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (53138) DHT: Sensor Timeout
+[0m
+[0;31mE (53138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (54138) DHT: Sensor Timeout
+[0m
+[0;31mE (54138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (55138) DHT: Sensor Timeout
+[0m
+[0;31mE (55138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (56138) DHT: Sensor Timeout
+[0m
+[0;31mE (56138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (57138) DHT: Sensor Timeout
+[0m
+[0;31mE (57138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (58138) DHT: Sensor Timeout
+[0m
+[0;31mE (58138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (59138) DHT: Sensor Timeout
+[0m
+[0;31mE (59138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (60138) DHT: Sensor Timeout
+[0m
+[0;31mE (60138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (61138) DHT: Sensor Timeout
+[0m
+[0;31mE (61138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (62138) DHT: Sensor Timeout
+[0m
+[0;31mE (62138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (63138) DHT: Sensor Timeout
+[0m
+[0;31mE (63138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (64138) DHT: Sensor Timeout
+[0m
+[0;31mE (64138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (65138) DHT: Sensor Timeout
+[0m
+[0;31mE (65138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (66138) DHT: Sensor Timeout
+[0m
+[0;31mE (66138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;32mI (66598) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;31mE (67138) DHT: Sensor Timeout
+[0m
+[0;31mE (67138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (68138) DHT: Sensor Timeout
+[0m
+[0;31mE (68138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (69138) DHT: Sensor Timeout
+[0m
+[0;31mE (69138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (70138) DHT: Sensor Timeout
+[0m
+[0;31mE (70138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (71138) DHT: Sensor Timeout
+[0m
+[0;31mE (71138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (72138) DHT: Sensor Timeout
+[0m
+[0;31mE (72138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (73138) DHT: Sensor Timeout
+[0m
+[0;31mE (73138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (74138) DHT: Sensor Timeout
+[0m
+[0;31mE (74138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (75138) DHT: Sensor Timeout
+[0m
+[0;31mE (75138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (76138) DHT: Sensor Timeout
+[0m
+[0;31mE (76138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (77138) DHT: Sensor Timeout
+[0m
+[0;31mE (77138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (78138) DHT: Sensor Timeout
+[0m
+[0;31mE (78138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (79138) DHT: Sensor Timeout
+[0m
+[0;31mE (79138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (80138) DHT: Sensor Timeout
+[0m
+[0;31mE (80138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (80268) BLE_MESH: No Health Server context provided[0m
+[0;31mE (81138) DHT: Sensor Timeout
+[0m
+[0;31mE (81138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (81488) BLE_MESH: No Health Server context provided[0m
+[0;32mI (81508) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (81508) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (81508) EXAMPLE: net_idx 0x000, addr 0x00dd[0m
+[0;32mI (81518) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;31mE (82138) DHT: Sensor Timeout
+[0m
+[0;31mE (82138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (82638) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;31mE (83138) DHT: Sensor Timeout
+[0m
+[0;31mE (83138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (84138) DHT: Sensor Timeout
+[0m
+[0;31mE (84138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (85138) DHT: Sensor Timeout
+[0m
+[0;31mE (85138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (86138) DHT: Sensor Timeout
+[0m
+[0;31mE (86138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (87138) DHT: Sensor Timeout
+[0m
+[0;31mE (87138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (88138) DHT: Sensor Timeout
+[0m
+[0;31mE (88138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (88488) BLE_MESH: No matching TX context for ack[0m
+[0;31mE (89138) DHT: Sensor Timeout
+[0m
+[0;31mE (89138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (90138) DHT: Sensor Timeout
+[0m
+[0;31mE (90138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (91138) DHT: Sensor Timeout
+[0m
+[0;31mE (91138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;32mI (92008) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (92008) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (92008) AppKey: b3 b3 ee 0a b2 08 3f c8 3d 5d 39 ea 40 7e ac 2f [0m
+[0;31mE (92138) DHT: Sensor Timeout
+[0m
+[0;31mE (92138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (93138) DHT: Sensor Timeout
+[0m
+[0;31mE (93138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (94138) DHT: Sensor Timeout
+[0m
+[0;31mE (94138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (95138) DHT: Sensor Timeout
+[0m
+[0;31mE (95138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (96138) DHT: Sensor Timeout
+[0m
+[0;31mE (96138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (97138) DHT: Sensor Timeout
+[0m
+[0;31mE (97138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (98138) DHT: Sensor Timeout
+[0m
+[0;31mE (98138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (99118) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;31mE (99138) DHT: Sensor Timeout
+[0m
+[0;31mE (99138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (100138) DHT: Sensor Timeout
+[0m
+[0;31mE (100138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (101138) DHT: Sensor Timeout
+[0m
+[0;31mE (101138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (102138) DHT: Sensor Timeout
+[0m
+[0;31mE (102138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (103138) DHT: Sensor Timeout
+[0m
+[0;31mE (103138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (104138) DHT: Sensor Timeout
+[0m
+[0;31mE (104138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (105138) DHT: Sensor Timeout
+[0m
+[0;31mE (105138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (106138) DHT: Sensor Timeout
+[0m
+[0;31mE (106138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (107138) DHT: Sensor Timeout
+[0m
+[0;31mE (107138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (108138) DHT: Sensor Timeout
+[0m
+[0;31mE (108138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (109138) DHT: Sensor Timeout
+[0m
+[0;31mE (109138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (110138) DHT: Sensor Timeout
+[0m
+[0;31mE (110138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (111138) DHT: Sensor Timeout
+[0m
+[0;31mE (111138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (112138) DHT: Sensor Timeout
+[0m
+[0;31mE (112138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (113138) DHT: Sensor Timeout
+[0m
+[0;31mE (113138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (114138) DHT: Sensor Timeout
+[0m
+[0;31mE (114138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (115138) DHT: Sensor Timeout
+[0m
+[0;31mE (115138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (116138) DHT: Sensor Timeout
+[0m
+[0;31mE (116138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (117138) DHT: Sensor Timeout
+[0m
+[0;31mE (117138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (118138) DHT: Sensor Timeout
+[0m
+[0;31mE (118138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (119138) DHT: Sensor Timeout
+[0m
+[0;31mE (119138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (120138) DHT: Sensor Timeout
+[0m
+[0;31mE (120138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (121138) DHT: Sensor Timeout
+[0m
+[0;31mE (121138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (122138) DHT: Sensor Timeout
+[0m
+[0;31mE (122138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (123138) DHT: Sensor Timeout
+[0m
+[0;31mE (123138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (124138) DHT: Sensor Timeout
+[0m
+[0;31mE (124138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (125138) DHT: Sensor Timeout
+[0m
+[0;31mE (125138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (126138) DHT: Sensor Timeout
+[0m
+[0;31mE (126138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (127138) DHT: Sensor Timeout
+[0m
+[0;31mE (127138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (128138) DHT: Sensor Timeout
+[0m
+[0;31mE (128138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (129138) DHT: Sensor Timeout
+[0m
+[0;31mE (129138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (130138) DHT: Sensor Timeout
+[0m
+[0;31mE (130138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (131138) DHT: Sensor Timeout
+[0m
+[0;31mE (131138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (132138) DHT: Sensor Timeout
+[0m
+[0;31mE (132138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (133138) DHT: Sensor Timeout
+[0m
+[0;31mE (133138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (134138) DHT: Sensor Timeout
+[0m
+[0;31mE (134138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (135138) DHT: Sensor Timeout
+[0m
+[0;31mE (135138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (136138) DHT: Sensor Timeout
+[0m
+[0;31mE (136138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (137138) DHT: Sensor Timeout
+[0m
+[0;31mE (137138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (138138) DHT: Sensor Timeout
+[0m
+[0;31mE (138138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (139138) DHT: Sensor Timeout
+[0m
+[0;31mE (139138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (140138) DHT: Sensor Timeout
+[0m
+[0;31mE (140138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (141138) DHT: Sensor Timeout
+[0m
+[0;31mE (141138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (142138) DHT: Sensor Timeout
+[0m
+[0;31mE (142138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (143138) DHT: Sensor Timeout
+[0m
+[0;31mE (143138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (144138) DHT: Sensor Timeout
+[0m
+[0;31mE (144138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (145138) DHT: Sensor Timeout
+[0m
+[0;31mE (145138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (146138) DHT: Sensor Timeout
+[0m
+[0;31mE (146138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (147138) DHT: Sensor Timeout
+[0m
+[0;31mE (147138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (148138) DHT: Sensor Timeout
+[0m
+[0;31mE (148138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (149138) DHT: Sensor Timeout
+[0m
+[0;31mE (149138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (150138) DHT: Sensor Timeout
+[0m
+[0;31mE (150138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (151138) DHT: Sensor Timeout
+[0m
+[0;31mE (151138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (152138) DHT: Sensor Timeout
+[0m
+[0;31mE (152138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (153138) DHT: Sensor Timeout
+[0m
+[0;31mE (153138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (154138) DHT: Sensor Timeout
+[0m
+[0;31mE (154138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (155138) DHT: Sensor Timeout
+[0m
+[0;31mE (155138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (156138) DHT: Sensor Timeout
+[0m
+[0;31mE (156138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (157138) DHT: Sensor Timeout
+[0m
+[0;31mE (157138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (158138) DHT: Sensor Timeout
+[0m
+[0;31mE (158138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (159138) DHT: Sensor Timeout
+[0m
+[0;31mE (159138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (160138) DHT: Sensor Timeout
+[0m
+[0;31mE (160138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (161138) DHT: Sensor Timeout
+[0m
+[0;31mE (161138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (162138) DHT: Sensor Timeout
+[0m
+[0;31mE (162138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (163138) DHT: Sensor Timeout
+[0m
+[0;31mE (163138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (164138) DHT: Sensor Timeout
+[0m
+[0;31mE (164138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (165138) DHT: Sensor Timeout
+[0m
+[0;31mE (165138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (166138) DHT: Sensor Timeout
+[0m
+[0;31mE (166138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (167138) DHT: Sensor Timeout
+[0m
+[0;31mE (167138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (168138) DHT: Sensor Timeout
+[0m
+[0;31mE (168138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (169138) DHT: Sensor Timeout
+[0m
+[0;31mE (169138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (170138) DHT: Sensor Timeout
+[0m
+[0;31mE (170138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (171138) DHT: Sensor Timeout
+[0m
+[0;31mE (171138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (172138) DHT: Sensor Timeout
+[0m
+[0;31mE (172138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (173138) DHT: Sensor Timeout
+[0m
+[0;31mE (173138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (174138) DHT: Sensor Timeout
+[0m
+[0;31mE (174138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (175138) DHT: Sensor Timeout
+[0m
+[0;31mE (175138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (176138) DHT: Sensor Timeout
+[0m
+[0;31mE (176138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (177138) DHT: Sensor Timeout
+[0m
+[0;31mE (177138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (178138) DHT: Sensor Timeout
+[0m
+[0;31mE (178138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (179138) DHT: Sensor Timeout
+[0m
+[0;31mE (179138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (180138) DHT: Sensor Timeout
+[0m
+[0;31mE (180138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (181138) DHT: Sensor Timeout
+[0m
+[0;31mE (181138) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (182138) DHT: Sensor Timeout
+[0m
+[0;31mE (182138) EXAMPLE: Temp : 0    Hum : 0[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7080
+load:0x40078000,len:15604
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (28) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Nov 13 2023 18:51:24[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb9ch (179100) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0003bbc4 vaddr=3ffbdb60 size=04454h ( 17492) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a0568h (656744) map[0m
+[0;32mI (360) esp_image: segment 3: paddr=000e0590 vaddr=3ffc1fb4 size=00a40h (  2624) load[0m
+[0;32mI (361) esp_image: segment 4: paddr=000e0fd8 vaddr=40080000 size=18358h ( 99160) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu up.[0m
+[0;32mI (425) cpu_start: Starting app cpu, entry point is 0x40081374[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) cpu_start: Application information:[0m
+[0;32mI (448) cpu_start: Project name:     sensor_server[0m
+[0;32mI (453) cpu_start: App version:      1[0m
+[0;32mI (458) cpu_start: Compile time:     Nov 13 2023 18:51:19[0m
+[0;32mI (464) cpu_start: ELF file SHA256:  eaf4ee83d83ddbdf...[0m
+[0;32mI (470) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (474) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (479) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (484) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (489) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (496) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (502) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFCA1E8 len 00015E18 (87 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 40098358 len 00007CA8 (31 KiB): IRAM[0m
+[0;32mI (540) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;32mI (549) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (554) app_start: Starting scheduler on CPU0[0m
+[0[0;32mI (558) app_start: Starting scheduler on CPU1[0m
+;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+[0;32mI (568) EXAMPLE: Initializing...[0m
+[0;32mI (588) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (588) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (598) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) BTDM_INIT: BT controller compile version [946b762][0m
+[0;32mI (618) BTDM_INIT: Bluetooth MAC: 0c:b8:15:c4:5d:da[0m
+[0;32mI (618) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1108) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1108) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1108) main_task: Returned from app_main()[0m
+[0;32mI (1118) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1108) DHT: Starting DHT Task
+
+[0m
+[0;31mE (1128) DHT: Sensor Timeout
+[0m
+[0;31mE (1128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (2128) DHT: Sensor Timeout
+[0m
+[0;31mE (2128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (3128) DHT: Sensor Timeout
+[0m
+[0;31mE (3128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;32mI (3228) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;31mE (4128) DHT: Sensor Timeout
+[0m
+[0;31mE (4128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (5128) DHT: Sensor Timeout
+[0m
+[0;31mE (5128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (6128) DHT: Sensor Timeout
+[0m
+[0;31mE (6128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (7128) DHT: Sensor Timeout
+[0m
+[0;31mE (7128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (8128) DHT: Sensor Timeout
+[0m
+[0;31mE (8128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (9128) DHT: Sensor Timeout
+[0m
+[0;31mE (9128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (10128) DHT: Sensor Timeout
+[0m
+[0;31mE (10128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (11128) DHT: Sensor Timeout
+[0m
+[0;31mE (11128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (12128) DHT: Sensor Timeout
+[0m
+[0;31mE (12128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (12388) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (12398) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;31mE (13128) DHT: Sensor Timeout
+[0m
+[0;31mE (13128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;32mI (13168) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;31mE (14128) DHT: Sensor Timeout
+[0m
+[0;31mE (14128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (14258) BLE_MESH: No Health Server context provided[0m
+[0;31mE (15128) DHT: Sensor Timeout
+[0m
+[0;31mE (15128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (15538) BLE_MESH: No Health Server context provided[0m
+[0;32mI (15558) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (15558) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (15558) EXAMPLE: net_idx 0x000, addr 0x00df[0m
+[0;32mI (15568) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;31mE (16128) DHT: Sensor Timeout
+[0m
+[0;31mE (16128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (16678) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;31mE (17128) DHT: Sensor Timeout
+[0m
+[0;31mE (17128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (18128) DHT: Sensor Timeout
+[0m
+[0;31mE (18128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (19128) DHT: Sensor Timeout
+[0m
+[0;31mE (19128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (20128) DHT: Sensor Timeout
+[0m
+[0;31mE (20128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (21128) DHT: Sensor Timeout
+[0m
+[0;31mE (21128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (22128) DHT: Sensor Timeout
+[0m
+[0;31mE (22128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;33mW (22478) BLE_MESH: No matching TX context for ack[0m
+[0;31mE (23128) DHT: Sensor Timeout
+[0m
+[0;31mE (23128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (24128) DHT: Sensor Timeout
+[0m
+[0;31mE (24128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (25128) DHT: Sensor Timeout
+[0m
+[0;31mE (25128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;32mI (26098) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (26098) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (26098) AppKey: b3 b3 ee 0a b2 08 3f c8 3d 5d 39 ea 40 7e ac 2f [0m
+[0;31mE (26128) DHT: Sensor Timeout
+[0m
+[0;31mE (26128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (27128) DHT: Sensor Timeout
+[0m
+[0;31mE (27128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (28128) DHT: Sensor Timeout
+[0m
+[0;31mE (28128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (29128) DHT: Sensor Timeout
+[0m
+[0;31mE (29128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (30128) DHT: Sensor Timeout
+[0m
+[0;31mE (30128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (31128) DHT: Sensor Timeout
+[0m
+[0;31mE (31128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (32128) DHT: Sensor Timeout
+[0m
+[0;31mE (32128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (33128) DHT: Sensor Timeout
+[0m
+[0;31mE (33128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;32mI (33648) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (33648) EXAMPLE: elem_addr 0x00df, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;31mE (34128) DHT: Sensor Timeout
+[0m
+[0;31mE (34128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (35128) DHT: Sensor Timeout
+[0m
+[0;31mE (35128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (36128) DHT: Sensor Timeout
+[0m
+[0;31mE (36128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (37128) DHT: Sensor Timeout
+[0m
+[0;31mE (37128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (38128) DHT: Sensor Timeout
+[0m
+[0;31mE (38128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (39128) DHT: Sensor Timeout
+[0m
+[0;31mE (39128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (40128) DHT: Sensor Timeout
+[0m
+[0;31mE (40128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (41128) DHT: Sensor Timeout
+[0m
+[0;31mE (41128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (42128) DHT: Sensor Timeout
+[0m
+[0;31mE (42128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (43128) DHT: Sensor Timeout
+[0m
+[0;31mE (43128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (44128) DHT: Sensor Timeout
+[0m
+[0;31mE (44128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;32mI (44328) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_PUB_SET[0m
+[0;32mI (44328) EXAMPLE: elem_addr 0x00df, pub_addr 0xc000, cid 0xffff, mod_id 0x1100[0m
+[0;33mW (44908) BLE_MESH: No matching TX context for ack[0m
+[0;31mE (45128) DHT: Sensor Timeout
+[0m
+[0;31mE (45128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (46128) DHT: Sensor Timeout
+[0m
+[0;31mE (46128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (47128) DHT: Sensor Timeout
+[0m
+[0;31mE (47128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (48128) DHT: Sensor Timeout
+[0m
+[0;31mE (48128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (49128) DHT: Sensor Timeout
+[0m
+[0;31mE (49128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (50128) DHT: Sensor Timeout
+[0m
+[0;31mE (50128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (51128) DHT: Sensor Timeout
+[0m
+[0;31mE (51128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (52128) DHT: Sensor Timeout
+[0m
+[0;31mE (52128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (53128) DHT: Sensor Timeout
+[0m
+[0;31mE (53128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (54128) DHT: Sensor Timeout
+[0m
+[0;31mE (54128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (55128) DHT: Sensor Timeout
+[0m
+[0;31mE (55128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (56128) DHT: Sensor Timeout
+[0m
+[0;31mE (56128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (57128) DHT: Sensor Timeout
+[0m
+[0;31mE (57128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (58128) DHT: Sensor Timeout
+[0m
+[0;31mE (58128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (59128) DHT: Sensor Timeout
+[0m
+[0;31mE (59128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (60128) DHT: Sensor Timeout
+[0m
+[0;31mE (60128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (61128) DHT: Sensor Timeout
+[0m
+[0;31mE (61128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (62128) DHT: Sensor Timeout
+[0m
+[0;31mE (62128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (63128) DHT: Sensor Timeout
+[0m
+[0;31mE (63128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (64128) DHT: Sensor Timeout
+[0m
+[0;31mE (64128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (65128) DHT: Sensor Timeout
+[0m
+[0;31mE (65128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (66128) DHT: Sensor Timeout
+[0m
+[0;31mE (66128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (67128) DHT: Sensor Timeout
+[0m
+[0;31mE (67128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (68128) DHT: Sensor Timeout
+[0m
+[0;31mE (68128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (69128) DHT: Sensor Timeout
+[0m
+[0;31mE (69128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (70128) DHT: Sensor Timeout
+[0m
+[0;31mE (70128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (71128) DHT: Sensor Timeout
+[0m
+[0;31mE (71128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (72128) DHT: Sensor Timeout
+[0m
+[0;31mE (72128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (73128) DHT: Sensor Timeout
+[0m
+[0;31mE (73128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (74128) DHT: Sensor Timeout
+[0m
+[0;31mE (74128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (75128) DHT: Sensor Timeout
+[0m
+[0;31mE (75128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (76128) DHT: Sensor Timeout
+[0m
+[0;31mE (76128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (77128) DHT: Sensor Timeout
+[0m
+[0;31mE (77128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (78128) DHT: Sensor Timeout
+[0m
+[0;31mE (78128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (79128) DHT: Sensor Timeout
+[0m
+[0;31mE (79128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (80128) DHT: Sensor Timeout
+[0m
+[0;31mE (80128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (81128) DHT: Sensor Timeout
+[0m
+[0;31mE (81128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (82128) DHT: Sensor Timeout
+[0m
+[0;31mE (82128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (83128) DHT: Sensor Timeout
+[0m
+[0;31mE (83128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (84128) DHT: Sensor Timeout
+[0m
+[0;31mE (84128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (85128) DHT: Sensor Timeout
+[0m
+[0;31mE (85128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (86128) DHT: Sensor Timeout
+[0m
+[0;31mE (86128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (87128) DHT: Sensor Timeout
+[0m
+[0;31mE (87128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (88128) DHT: Sensor Timeout
+[0m
+[0;31mE (88128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (89128) DHT: Sensor Timeout
+[0m
+[0;31mE (89128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (90128) DHT: Sensor Timeout
+[0m
+[0;31mE (90128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (91128) DHT: Sensor Timeout
+[0m
+[0;31mE (91128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (92128) DHT: Sensor Timeout
+[0m
+[0;31mE (92128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (93128) DHT: Sensor Timeout
+[0m
+[0;31mE (93128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (94128) DHT: Sensor Timeout
+[0m
+[0;31mE (94128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (95128) DHT: Sensor Timeout
+[0m
+[0;31mE (95128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (96128) DHT: Sensor Timeout
+[0m
+[0;31mE (96128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (97128) DHT: Sensor Timeout
+[0m
+[0;31mE (97128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (98128) DHT: Sensor Timeout
+[0m
+[0;31mE (98128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (99128) DHT: Sensor Timeout
+[0m
+[0;31mE (99128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (100128) DHT: Sensor Timeout
+[0m
+[0;31mE (100128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (101128) DHT: Sensor Timeout
+[0m
+[0;31mE (101128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (102128) DHT: Sensor Timeout
+[0m
+[0;31mE (102128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (103128) DHT: Sensor Timeout
+[0m
+[0;31mE (103128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (104128) DHT: Sensor Timeout
+[0m
+[0;31mE (104128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (105128) DHT: Sensor Timeout
+[0m
+[0;31mE (105128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (106128) DHT: Sensor Timeout
+[0m
+[0;31mE (106128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (107128) DHT: Sensor Timeout
+[0m
+[0;31mE (107128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (108128) DHT: Sensor Timeout
+[0m
+[0;31mE (108128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (109128) DHT: Sensor Timeout
+[0m
+[0;31mE (109128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (110128) DHT: Sensor Timeout
+[0m
+[0;31mE (110128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (111128) DHT: Sensor Timeout
+[0m
+[0;31mE (111128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (112128) DHT: Sensor Timeout
+[0m
+[0;31mE (112128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (113128) DHT: Sensor Timeout
+[0m
+[0;31mE (113128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (114128) DHT: Sensor Timeout
+[0m
+[0;31mE (114128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (115128) DHT: Sensor Timeout
+[0m
+[0;31mE (115128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (116128) DHT: Sensor Timeout
+[0m
+[0;31mE (116128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (117128) DHT: Sensor Timeout
+[0m
+[0;31mE (117128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (118128) DHT: Sensor Timeout
+[0m
+[0;31mE (118128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (119128) DHT: Sensor Timeout
+[0m
+[0;31mE (119128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (120128) DHT: Sensor Timeout
+[0m
+[0;31mE (120128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (121128) DHT: Sensor Timeout
+[0m
+[0;31mE (121128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (122128) DHT: Sensor Timeout
+[0m
+[0;31mE (122128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (123128) DHT: Sensor Timeout
+[0m
+[0;31mE (123128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (124128) DHT: Sensor Timeout
+[0m
+[0;31mE (124128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (125128) DHT: Sensor Timeout
+[0m
+[0;31mE (125128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (126128) DHT: Sensor Timeout
+[0m
+[0;31mE (126128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (127128) DHT: Sensor Timeout
+[0m
+[0;31mE (127128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (128128) DHT: Sensor Timeout
+[0m
+[0;31mE (128128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (129128) DHT: Sensor Timeout
+[0m
+[0;31mE (129128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (130128) DHT: Sensor Timeout
+[0m
+[0;31mE (130128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (131128) DHT: Sensor Timeout
+[0m
+[0;31mE (131128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (132128) DHT: Sensor Timeout
+[0m
+[0;31mE (132128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (133128) DHT: Sensor Timeout
+[0m
+[0;31mE (133128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (134128) DHT: Sensor Timeout
+[0m
+[0;31mE (134128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (135128) DHT: Sensor Timeout
+[0m
+[0;31mE (135128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (136128) DHT: Sensor Timeout
+[0m
+[0;31mE (136128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (137128) DHT: Sensor Timeout
+[0m
+[0;31mE (137128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (138128) DHT: Sensor Timeout
+[0m
+[0;31mE (138128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (139128) DHT: Sensor Timeout
+[0m
+[0;31mE (139128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (140128) DHT: Sensor Timeout
+[0m
+[0;31mE (140128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (141128) DHT: Sensor Timeout
+[0m
+[0;31mE (141128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (142128) DHT: Sensor Timeout
+[0m
+[0;31mE (142128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (143128) DHT: Sensor Timeout
+[0m
+[0;31mE (143128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (144128) DHT: Sensor Timeout
+[0m
+[0;31mE (144128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (145128) DHT: Sensor Timeout
+[0m
+[0;31mE (145128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (146128) DHT: Sensor Timeout
+[0m
+[0;31mE (146128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (147128) DHT: Sensor Timeout
+[0m
+[0;31mE (147128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (148128) DHT: Sensor Timeout
+[0m
+[0;31mE (148128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (149128) DHT: Sensor Timeout
+[0m
+[0;31mE (149128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (150128) DHT: Sensor Timeout
+[0m
+[0;31mE (150128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (151128) DHT: Sensor Timeout
+[0m
+[0;31mE (151128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (152128) DHT: Sensor Timeout
+[0m
+[0;31mE (152128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (153128) DHT: Sensor Timeout
+[0m
+[0;31mE (153128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (154128) DHT: Sensor Timeout
+[0m
+[0;31mE (154128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (155128) DHT: Sensor Timeout
+[0m
+[0;31mE (155128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (156128) DHT: Sensor Timeout
+[0m
+[0;31mE (156128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (157128) DHT: Sensor Timeout
+[0m
+[0;31mE (157128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (158128) DHT: Sensor Timeout
+[0m
+[0;31mE (158128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (159128) DHT: Sensor Timeout
+[0m
+[0;31mE (159128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (160128) DHT: Sensor Timeout
+[0m
+[0;31mE (160128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (161128) DHT: Sensor Timeout
+[0m
+[0;31mE (161128) EXAMPLE: Temp : 0    Hum : 0[0m
+[0;31mE (162128) DHT: Sensor Timeout
+[0m
+[0;31mE (162128) EXAMPLE: Temp : 0    Hum : 0[0m

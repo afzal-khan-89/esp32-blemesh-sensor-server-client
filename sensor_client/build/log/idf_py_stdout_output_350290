@@ -1,0 +1,1228 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7080
+load:0x40078000,len:15604
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 13 2023 21:19:31[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2cb0ch (183052) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=0003cb34 vaddr=3ffbdb60 size=034e4h ( 13540) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=a3de8h (671208) map[0m
+[0;32mI (366) esp_image: segment 3: paddr=000e3e10 vaddr=3ffc1044 size=018a0h (  6304) load[0m
+[0;32mI (368) esp_image: segment 4: paddr=000e56b8 vaddr=40080000 size=184f4h ( 99572) load[0m
+[0;32mI (419) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (419) boot: Disabling RNG early entropy source...[0m
+[0;32mI (431) cpu_start: Multicore app[0m
+[0;32mI (431) cpu_start: Pro cpu up.[0m
+[0;32mI (431) cpu_start: Starting app cpu, entry point is 0x40081378[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (449) cpu_start: Pro cpu start user code[0m
+[0;32mI (449) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (449) cpu_start: Application information:[0m
+[0;32mI (454) cpu_start: Project name:     sensor_client[0m
+[0;32mI (459) cpu_start: App version:      9b9280d-dirty[0m
+[0;32mI (465) cpu_start: Compile time:     Nov 14 2023 00:06:01[0m
+[0;32mI (471) cpu_start: ELF file SHA256:  b4e39e21e67c869d...[0m
+[0;32mI (477) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (482) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (486) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (491) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (496) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (503) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (509) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFCA0E8 len 00015F18 (87 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 400984F4 len 00007B0C (30 KiB): IRAM[0m
+[0;32mI (548) spi_flash: detected chip: generic[0m
+[0;32mI (551) spi_flash: flash io: dio[0m
+[0;32mI (556) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (561) app_start: Starting scheduler on CPU0[0m
+[0[0;32mI (565) app_start: Starting scheduler on CPU1[0m
+;32mI (565) main_task: Started on CPU0[0m
+[0;32mI (575) main_task: Calling app_main()[0m
+[0;32mI (575) EXAMPLE: Initializing...[0m
+use esp timer !!!
+[0;31mE (615) esp_timer: Task is already initialized[0m
+[0;32mI (615) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (615) BTDM_INIT: BT controller compile version [946b762][0m
+[0;32mI (625) BTDM_INIT: Bluetooth MAC: b8:d6:1a:ab:d1:9a[0m
+[0;32mI (635) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1115) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;31mE (1115) EXAMPLE_NVS: Restore, nvs_get_blob failed, err 4359[0m
+[0;32mI (1115) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (1135) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1135) main_task: Returned from app_main()[0m
+[0;31mE (2515) BT_GATT: GATT_SendServiceChangeIndication can't send service change indication manually, please configure the option through menuconfig[0m
+[0;32mI (3305) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (4475) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (4485) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;31mE (4755) BT_GATT: GATT_SendServiceChangeIndication can't send service change indication manually, please configure the option through menuconfig[0m
+[0;32mI (5615) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (6985) BLE_MESH: No Health Server context provided[0m
+[0;33mW (8645) BLE_MESH: No Health Server context provided[0m
+[0;31mE (8655) BT_GATT: GATT_SendServiceChangeIndication can't send service change indication manually, please configure the option through menuconfig[0m
+[0;32mI (8675) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (8675) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (8675) EXAMPLE: net_idx: 0x0000, addr: 0x00e1[0m
+[0;32mI (8685) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;33mW (9855) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;31mE (11875) BT_GATT: GATT_SendServiceChangeIndication can't send service change indication manually, please configure the option through menuconfig[0m
+[0;33mW (15535) BLE_MESH: No matching TX context for ack[0m
+[0;32mI (19195) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (19195) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (19195) AppKey: b3 b3 ee 0a b2 08 3f c8 3d 5d 39 ea 40 7e ac 2f [0m
+[0;32mI (27045) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (27045) EXAMPLE: elem_addr 0x00e1, app_idx 0x0000, cid 0xffff, mod_id 0x1102[0m
+[0;32mI (34405) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD[0m
+[0;32mI (34405) EXAMPLE: elem_addr 0x00e1, sub_addr 0xc000, cid 0xffff, mod_id 0x1102[0m
+[0;32mI (34525) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (34525) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (34525) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (34535) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (34535) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (34545) Sensor Data: 09 [0m
+[0;32mI (34545) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (34555) Sensor Data: 09 [0m
+[0;32mI (34725) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (34725) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (34725) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (34725) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (34735) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (34745) Sensor Data: 09 [0m
+[0;32mI (34745) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (34755) Sensor Data: 09 [0m
+[0;32mI (35565) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (35565) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (35565) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (35565) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (35575) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (35585) Sensor Data: 09 [0m
+[0;32mI (35585) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (35595) Sensor Data: 09 [0m
+[0;32mI (35765) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (35765) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (35765) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (35765) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (35775) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (35785) Sensor Data: 09 [0m
+[0;32mI (35785) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (35795) Sensor Data: 09 [0m
+[0;32mI (36765) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (36765) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (36765) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (36765) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (36775) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (36785) Sensor Data: 09 [0m
+[0;32mI (36785) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (36795) Sensor Data: 09 [0m
+[0;32mI (37565) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (37565) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (37565) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (37565) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (37575) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (37575) Sensor Data: 09 [0m
+[0;32mI (37585) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (37585) Sensor Data: 09 [0m
+[0;32mI (37785) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (37785) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (37785) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (37785) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (37795) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (37805) Sensor Data: 09 [0m
+[0;32mI (37805) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (37815) Sensor Data: 09 [0m
+[0;32mI (38595) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (38595) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (38595) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (38595) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (38605) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (38615) Sensor Data: 09 [0m
+[0;32mI (38615) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (38625) Sensor Data: 09 [0m
+[0;32mI (39825) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (39825) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (39825) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (39825) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (39835) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (39845) Sensor Data: 09 [0m
+[0;32mI (39845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (39855) Sensor Data: 09 [0m
+[0;32mI (40665) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (40665) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (40665) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (40665) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (40675) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (40685) Sensor Data: 09 [0m
+[0;32mI (40685) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (40695) Sensor Data: 09 [0m
+[0;32mI (40805) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (40805) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (40805) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (40805) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (40815) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (40825) Sensor Data: 09 [0m
+[0;32mI (40825) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (40835) Sensor Data: 09 [0m
+[0;32mI (41605) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (41605) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (41605) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (41605) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (41615) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (41625) Sensor Data: 09 [0m
+[0;32mI (41625) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (41635) Sensor Data: 09 [0m
+[0;32mI (41825) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (41825) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (41825) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (41825) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (41835) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (41845) Sensor Data: 09 [0m
+[0;32mI (41845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (41855) Sensor Data: 09 [0m
+[0;32mI (42625) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (42625) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (42625) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (42625) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (42635) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (42645) Sensor Data: 09 [0m
+[0;32mI (42645) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (42655) Sensor Data: 09 [0m
+[0;32mI (42805) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (42805) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (42805) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (42805) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (42815) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (42825) Sensor Data: 09 [0m
+[0;32mI (42825) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (42835) Sensor Data: 09 [0m
+[0;32mI (43645) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (43645) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (43645) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (43645) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (43655) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (43655) Sensor Data: 09 [0m
+[0;32mI (43665) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (43665) Sensor Data: 09 [0m
+[0;32mI (43835) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (43845) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (43845) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (43845) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (43845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (43855) Sensor Data: 09 [0m
+[0;32mI (43855) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (43865) Sensor Data: 09 [0m
+[0;32mI (44655) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (44655) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (44655) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (44665) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (44665) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (44675) Sensor Data: 09 [0m
+[0;32mI (44675) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (44685) Sensor Data: 09 [0m
+[0;32mI (44825) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (44825) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (44825) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (44825) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (44835) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (44845) Sensor Data: 09 [0m
+[0;32mI (44845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (44855) Sensor Data: 09 [0m
+[0;32mI (45635) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (45635) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (45635) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (45645) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (45645) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (45655) Sensor Data: 09 [0m
+[0;32mI (45655) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (45665) Sensor Data: 09 [0m
+[0;32mI (45855) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (45855) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (45855) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (45865) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (45865) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (45875) Sensor Data: 09 [0m
+[0;32mI (45875) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (45885) Sensor Data: 09 [0m
+[0;32mI (46645) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (46645) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (46645) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (46645) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (46655) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (46665) Sensor Data: 09 [0m
+[0;32mI (46665) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (46675) Sensor Data: 09 [0m
+[0;32mI (47685) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (47685) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (47685) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (47685) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (47695) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (47705) Sensor Data: 09 [0m
+[0;32mI (47705) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (47715) Sensor Data: 09 [0m
+[0;32mI (47885) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (47885) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (47885) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (47885) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (47895) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (47905) Sensor Data: 09 [0m
+[0;32mI (47905) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (47915) Sensor Data: 09 [0m
+[0;32mI (48715) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (48715) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (48715) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (48725) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (48725) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (48735) Sensor Data: 09 [0m
+[0;32mI (48735) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (48745) Sensor Data: 09 [0m
+[0;32mI (48865) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (48865) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (48865) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (48865) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (48875) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (48885) Sensor Data: 09 [0m
+[0;32mI (48885) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (48895) Sensor Data: 09 [0m
+[0;32mI (49685) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (49685) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (49685) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (49685) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (49695) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (49705) Sensor Data: 09 [0m
+[0;32mI (49705) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (49715) Sensor Data: 09 [0m
+[0;32mI (49905) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (49905) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (49905) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (49905) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (49915) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (49925) Sensor Data: 09 [0m
+[0;32mI (49925) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (49935) Sensor Data: 09 [0m
+[0;32mI (50725) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (50725) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (50725) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (50725) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (50735) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (50745) Sensor Data: 09 [0m
+[0;32mI (50745) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (50755) Sensor Data: 09 [0m
+[0;32mI (51705) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (51705) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (51705) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (51705) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (51715) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (51725) Sensor Data: 09 [0m
+[0;32mI (51725) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (51735) Sensor Data: 09 [0m
+[0;32mI (51925) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (51925) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (51925) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (51925) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (51935) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (51945) Sensor Data: 09 [0m
+[0;32mI (51945) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (51955) Sensor Data: 09 [0m
+[0;32mI (52735) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (52735) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (52735) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (52735) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (52745) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (52745) Sensor Data: 09 [0m
+[0;32mI (52755) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (52755) Sensor Data: 09 [0m
+[0;32mI (52985) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (52985) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (52985) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (52985) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (52995) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (53005) Sensor Data: 09 [0m
+[0;32mI (53005) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (53015) Sensor Data: 09 [0m
+[0;32mI (53715) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (53715) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (53715) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (53725) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (53725) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (53735) Sensor Data: 09 [0m
+[0;32mI (53735) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (53745) Sensor Data: 09 [0m
+[0;32mI (53935) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (53935) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (53935) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (53945) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (53945) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (53955) Sensor Data: 09 [0m
+[0;32mI (53955) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (53965) Sensor Data: 09 [0m
+[0;32mI (54775) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (54775) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (54785) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (54785) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (54785) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (54795) Sensor Data: 09 [0m
+[0;32mI (54795) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (54805) Sensor Data: 09 [0m
+[0;32mI (54925) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (54925) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (54925) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (54925) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (54935) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (54945) Sensor Data: 09 [0m
+[0;32mI (54945) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (54955) Sensor Data: 09 [0m
+[0;32mI (55765) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (55765) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (55765) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (55765) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (55775) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (55785) Sensor Data: 09 [0m
+[0;32mI (55785) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (55795) Sensor Data: 09 [0m
+[0;32mI (55975) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (55975) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (55975) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (55985) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (55985) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (55995) Sensor Data: 09 [0m
+[0;32mI (55995) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (56005) Sensor Data: 09 [0m
+[0;32mI (56945) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (56945) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (56945) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (56945) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (56955) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (56965) Sensor Data: 09 [0m
+[0;32mI (56965) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (56975) Sensor Data: 09 [0m
+[0;32mI (57785) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (57785) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (57785) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (57785) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (57795) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (57805) Sensor Data: 09 [0m
+[0;32mI (57805) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (57815) Sensor Data: 09 [0m
+[0;32mI (57995) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (57995) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (57995) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (58005) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (58005) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (58015) Sensor Data: 09 [0m
+[0;32mI (58015) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (58025) Sensor Data: 09 [0m
+[0;32mI (58825) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (58825) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (58825) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (58825) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (58835) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (58845) Sensor Data: 09 [0m
+[0;32mI (58845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (58855) Sensor Data: 09 [0m
+[0;32mI (58965) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (58965) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (58965) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (58965) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (58975) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (58985) Sensor Data: 09 [0m
+[0;32mI (58985) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (58995) Sensor Data: 09 [0m
+[0;32mI (59785) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (59785) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (59785) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (59785) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (59795) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (59805) Sensor Data: 09 [0m
+[0;32mI (59805) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (59815) Sensor Data: 09 [0m
+[0;32mI (60025) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (60025) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (60025) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (60025) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (60035) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (60045) Sensor Data: 09 [0m
+[0;32mI (60045) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (60055) Sensor Data: 09 [0m
+[0;32mI (60835) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (60845) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (60845) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (60845) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (60845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (60855) Sensor Data: 09 [0m
+[0;32mI (60855) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (60865) Sensor Data: 09 [0m
+[0;32mI (60985) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (60985) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (60985) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (60985) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (60995) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (61005) Sensor Data: 09 [0m
+[0;32mI (61005) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (61015) Sensor Data: 09 [0m
+[0;32mI (61825) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (61825) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (61825) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (61825) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (61835) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (61845) Sensor Data: 09 [0m
+[0;32mI (61845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (61855) Sensor Data: 09 [0m
+[0;32mI (62025) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (62025) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (62025) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (62025) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (62035) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (62045) Sensor Data: 09 [0m
+[0;32mI (62045) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (62055) Sensor Data: 09 [0m
+[0;32mI (62845) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (62845) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (62845) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (62845) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (62855) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (62865) Sensor Data: 09 [0m
+[0;32mI (62865) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (62875) Sensor Data: 09 [0m
+[0;32mI (63005) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (63005) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (63005) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (63005) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (63015) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (63025) Sensor Data: 09 [0m
+[0;32mI (63025) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (63035) Sensor Data: 09 [0m
+[0;32mI (63825) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (63825) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (63825) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (63825) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (63835) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (63845) Sensor Data: 09 [0m
+[0;32mI (63845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (63855) Sensor Data: 09 [0m
+[0;32mI (64035) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (64035) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (64035) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (64045) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (64045) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (64055) Sensor Data: 09 [0m
+[0;32mI (64055) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (64065) Sensor Data: 09 [0m
+[0;32mI (65025) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (65025) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (65025) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (65025) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (65035) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (65045) Sensor Data: 09 [0m
+[0;32mI (65045) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (65055) Sensor Data: 09 [0m
+[0;32mI (65835) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (65835) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (65835) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (65845) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (65845) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (65855) Sensor Data: 09 [0m
+[0;32mI (65855) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (65865) Sensor Data: 09 [0m
+[0;32mI (66055) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (66055) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (66055) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (66065) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (66065) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (66075) Sensor Data: 09 [0m
+[0;32mI (66075) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (66085) Sensor Data: 09 [0m
+[0;32mI (66875) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (66875) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (66875) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (66875) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (66875) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (66885) Sensor Data: 09 [0m
+[0;32mI (66895) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (66895) Sensor Data: 09 [0m
+[0;32mI (67045) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (67045) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (67045) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (67045) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (67055) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (67065) Sensor Data: 09 [0m
+[0;32mI (67065) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (67075) Sensor Data: 09 [0m
+[0;32mI (67865) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (67865) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (67865) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (67865) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (67875) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (67885) Sensor Data: 09 [0m
+[0;32mI (67885) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (67895) Sensor Data: 09 [0m
+[0;32mI (68915) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (68915) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (68915) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (68925) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (68925) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (68935) Sensor Data: 09 [0m
+[0;32mI (68935) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (68945) Sensor Data: 09 [0m
+[0;32mI (69065) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (69065) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (69065) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (69065) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (69075) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (69085) Sensor Data: 09 [0m
+[0;32mI (69085) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (69095) Sensor Data: 09 [0m
+[0;32mI (69885) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (69885) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (69885) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (69885) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (69895) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (69905) Sensor Data: 09 [0m
+[0;32mI (69905) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (69915) Sensor Data: 09 [0m
+[0;32mI (70105) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (70105) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (70105) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (70105) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (70115) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (70125) Sensor Data: 09 [0m
+[0;32mI (70125) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (70135) Sensor Data: 09 [0m
+[0;32mI (70945) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (70945) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (70945) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (70945) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (70955) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (70965) Sensor Data: 09 [0m
+[0;32mI (70965) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (70975) Sensor Data: 09 [0m
+[0;32mI (71085) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (71085) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (71085) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (71085) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (71095) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (71105) Sensor Data: 09 [0m
+[0;32mI (71105) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (71115) Sensor Data: 09 [0m
+[0;32mI (71905) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (71905) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (71905) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (71905) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (71915) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (71925) Sensor Data: 09 [0m
+[0;32mI (71925) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (71935) Sensor Data: 09 [0m
+[0;32mI (72125) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (72125) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (72125) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (72125) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (72135) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (72145) Sensor Data: 09 [0m
+[0;32mI (72145) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (72155) Sensor Data: 09 [0m
+[0;32mI (72965) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (72965) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (72965) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (72965) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (72975) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (72985) Sensor Data: 09 [0m
+[0;32mI (72985) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (72995) Sensor Data: 09 [0m
+[0;32mI (73105) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (73105) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (73105) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (73105) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (73115) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (73125) Sensor Data: 09 [0m
+[0;32mI (73125) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (73135) Sensor Data: 09 [0m
+[0;32mI (73925) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (73925) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (73925) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (73925) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (73935) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (73945) Sensor Data: 09 [0m
+[0;32mI (73945) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (73955) Sensor Data: 09 [0m
+[0;32mI (74165) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (74165) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (74165) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (74165) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (74175) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (74185) Sensor Data: 09 [0m
+[0;32mI (74185) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (74195) Sensor Data: 09 [0m
+[0;32mI (74965) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (74965) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (74965) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (74965) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (74975) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (74975) Sensor Data: 09 [0m
+[0;32mI (74985) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (74995) Sensor Data: 09 [0m
+[0;32mI (75125) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (75125) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (75125) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (75125) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (75135) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (75145) Sensor Data: 09 [0m
+[0;32mI (75145) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (75155) Sensor Data: 09 [0m
+[0;32mI (75935) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (75935) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (75935) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (75945) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (75945) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (75955) Sensor Data: 09 [0m
+[0;32mI (75955) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (75965) Sensor Data: 09 [0m
+[0;32mI (76165) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (76165) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (76165) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (76165) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (76175) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (76185) Sensor Data: 09 [0m
+[0;32mI (76185) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (76195) Sensor Data: 09 [0m
+[0;32mI (76985) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (76985) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (76985) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (76985) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (76995) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (77005) Sensor Data: 09 [0m
+[0;32mI (77005) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (77015) Sensor Data: 09 [0m
+[0;32mI (77145) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (77145) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (77145) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (77145) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (77155) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (77165) Sensor Data: 09 [0m
+[0;32mI (77165) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (77175) Sensor Data: 09 [0m
+[0;32mI (77965) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (77965) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (77965) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (77965) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (77975) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (77985) Sensor Data: 09 [0m
+[0;32mI (77985) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (77995) Sensor Data: 09 [0m
+[0;32mI (78185) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (78185) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (78185) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (78185) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (78185) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (78195) Sensor Data: 09 [0m
+[0;32mI (78205) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (78205) Sensor Data: 09 [0m
+[0;32mI (79005) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (79005) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (79005) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (79005) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (79015) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (79025) Sensor Data: 09 [0m
+[0;32mI (79025) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (79035) Sensor Data: 09 [0m
+[0;32mI (79165) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (79165) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (79165) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (79165) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (79175) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (79185) Sensor Data: 09 [0m
+[0;32mI (79185) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (79195) Sensor Data: 09 [0m
+[0;32mI (79985) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (79985) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (79985) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (79985) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (79995) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (80005) Sensor Data: 09 [0m
+[0;32mI (80005) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (80015) Sensor Data: 09 [0m
+[0;32mI (80225) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (80225) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (80225) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (80225) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (80235) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (80245) Sensor Data: 09 [0m
+[0;32mI (80245) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (80255) Sensor Data: 09 [0m
+[0;32mI (81055) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (81055) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (81055) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (81065) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (81065) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (81075) Sensor Data: 09 [0m
+[0;32mI (81075) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (81085) Sensor Data: 09 [0m
+[0;32mI (81185) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (81185) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (81185) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (81185) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (81195) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (81205) Sensor Data: 09 [0m
+[0;32mI (81205) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (81215) Sensor Data: 09 [0m
+[0;32mI (82005) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (82005) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (82005) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (82005) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (82015) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (82025) Sensor Data: 09 [0m
+[0;32mI (82025) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (82035) Sensor Data: 09 [0m
+[0;32mI (82225) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (82225) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (82225) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (82225) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (82235) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (82245) Sensor Data: 09 [0m
+[0;32mI (82245) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (82255) Sensor Data: 09 [0m
+[0;32mI (83055) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (83055) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (83055) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (83065) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (83065) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (83075) Sensor Data: 09 [0m
+[0;32mI (83075) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (83085) Sensor Data: 09 [0m
+[0;32mI (83205) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (83205) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (83205) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (83205) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (83215) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (83215) Sensor Data: 09 [0m
+[0;32mI (83225) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (83225) Sensor Data: 09 [0m
+[0;32mI (84025) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (84025) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (84025) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (84025) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (84035) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (84045) Sensor Data: 09 [0m
+[0;32mI (84045) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (84055) Sensor Data: 09 [0m
+[0;32mI (84245) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (84245) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (84245) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (84245) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (84255) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (84265) Sensor Data: 09 [0m
+[0;32mI (84265) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (84275) Sensor Data: 09 [0m
+[0;32mI (85085) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (85085) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (85085) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (85085) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (85095) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (85105) Sensor Data: 09 [0m
+[0;32mI (85105) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (85115) Sensor Data: 09 [0m
+[0;32mI (85225) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (85225) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (85225) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (85225) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (85235) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (85245) Sensor Data: 09 [0m
+[0;32mI (85245) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (85255) Sensor Data: 09 [0m
+[0;32mI (86045) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (86045) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (86045) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (86045) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (86055) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (86065) Sensor Data: 09 [0m
+[0;32mI (86065) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (86075) Sensor Data: 09 [0m
+[0;32mI (86265) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (86265) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (86265) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (86265) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (86275) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (86285) Sensor Data: 09 [0m
+[0;32mI (86285) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (86295) Sensor Data: 09 [0m
+[0;32mI (87085) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (87085) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (87085) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (87085) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (87095) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (87105) Sensor Data: 09 [0m
+[0;32mI (87105) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (87115) Sensor Data: 09 [0m
+[0;32mI (87245) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (87245) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (87245) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (87245) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (87255) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (87265) Sensor Data: 09 [0m
+[0;32mI (87265) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (87275) Sensor Data: 09 [0m
+[0;32mI (88065) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (88065) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (88065) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (88065) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (88075) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (88085) Sensor Data: 09 [0m
+[0;32mI (88085) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (88095) Sensor Data: 09 [0m
+[0;32mI (88265) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (88265) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (88265) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (88265) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (88275) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (88285) Sensor Data: 09 [0m
+[0;32mI (88285) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (88295) Sensor Data: 09 [0m
+[0;32mI (89105) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (89105) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (89105) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (89105) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (89115) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (89115) Sensor Data: 09 [0m
+[0;32mI (89125) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (89125) Sensor Data: 09 [0m
+[0;32mI (89265) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (89265) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (89265) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (89265) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (89275) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (89285) Sensor Data: 09 [0m
+[0;32mI (89285) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (89295) Sensor Data: 09 [0m
+[0;32mI (90105) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (90105) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (90105) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (90105) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (90115) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (90125) Sensor Data: 09 [0m
+[0;32mI (90125) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (90135) Sensor Data: 09 [0m
+[0;32mI (90315) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (90315) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (90325) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (90325) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (90325) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (90335) Sensor Data: 09 [0m
+[0;32mI (90335) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (90345) Sensor Data: 09 [0m
+[0;32mI (91145) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (91145) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (91145) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (91145) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (91155) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (91165) Sensor Data: 09 [0m
+[0;32mI (91165) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (91175) Sensor Data: 09 [0m
+[0;32mI (91285) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (91285) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (91285) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (91285) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (91295) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (91305) Sensor Data: 09 [0m
+[0;32mI (91305) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (91315) Sensor Data: 09 [0m
+[0;32mI (92105) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (92105) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (92105) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (92105) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (92115) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (92125) Sensor Data: 09 [0m
+[0;32mI (92125) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (92135) Sensor Data: 09 [0m
+[0;32mI (92315) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (92315) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (92315) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (92325) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (92325) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (92335) Sensor Data: 09 [0m
+[0;32mI (92335) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (92345) Sensor Data: 09 [0m
+[0;32mI (93165) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (93165) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (93165) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (93165) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (93175) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (93185) Sensor Data: 09 [0m
+[0;32mI (93185) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (93195) Sensor Data: 09 [0m
+[0;32mI (93305) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (93305) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (93305) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (93305) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (93315) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (93325) Sensor Data: 09 [0m
+[0;32mI (93325) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (93335) Sensor Data: 09 [0m
+[0;32mI (94125) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (94125) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (94125) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (94125) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (94135) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (94135) Sensor Data: 09 [0m
+[0;32mI (94145) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (94145) Sensor Data: 09 [0m
+[0;32mI (94345) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (94345) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (94345) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (94345) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (94355) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (94365) Sensor Data: 09 [0m
+[0;32mI (94365) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (94375) Sensor Data: 09 [0m
+[0;32mI (95165) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (95165) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (95165) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (95165) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (95175) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (95185) Sensor Data: 09 [0m
+[0;32mI (95185) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (95195) Sensor Data: 09 [0m
+[0;32mI (95325) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (95325) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (95325) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (95325) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (95335) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (95345) Sensor Data: 09 [0m
+[0;32mI (95345) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (95355) Sensor Data: 09 [0m
+[0;32mI (96145) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (96145) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (96145) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (96145) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (96155) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (96165) Sensor Data: 09 [0m
+[0;32mI (96165) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (96175) Sensor Data: 09 [0m
+[0;32mI (96385) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (96385) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (96385) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (96385) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (96395) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (96405) Sensor Data: 09 [0m
+[0;32mI (96405) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (96415) Sensor Data: 09 [0m
+[0;32mI (97205) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (97205) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (97205) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (97205) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (97215) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (97225) Sensor Data: 09 [0m
+[0;32mI (97225) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (97235) Sensor Data: 09 [0m
+[0;32mI (97425) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (97425) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (97425) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (97425) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (97435) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (97435) Sensor Data: 09 [0m
+[0;32mI (97445) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (97455) Sensor Data: 09 [0m
+[0;32mI (98165) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (98165) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (98165) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (98165) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (98175) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (98185) Sensor Data: 09 [0m
+[0;32mI (98185) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (98195) Sensor Data: 09 [0m
+[0;32mI (98405) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (98405) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (98405) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (98405) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (98415) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (98425) Sensor Data: 09 [0m
+[0;32mI (98425) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (98435) Sensor Data: 09 [0m
+[0;32mI (99225) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (99225) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (99225) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (99225) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (99235) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (99245) Sensor Data: 09 [0m
+[0;32mI (99245) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (99255) Sensor Data: 09 [0m
+[0;32mI (99365) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (99365) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (99365) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (99365) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (99375) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (99385) Sensor Data: 09 [0m
+[0;32mI (99385) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (99395) Sensor Data: 09 [0m
+[0;32mI (100185) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (100185) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (100185) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (100185) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (100195) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (100205) Sensor Data: 09 [0m
+[0;32mI (100205) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (100215) Sensor Data: 09 [0m
+[0;32mI (100375) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (100385) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (100385) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (100385) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (100385) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (100395) Sensor Data: 09 [0m
+[0;32mI (100405) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (100405) Sensor Data: 09 [0m
+[0;32mI (101225) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (101225) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (101225) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (101225) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (101235) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (101245) Sensor Data: 09 [0m
+[0;32mI (101245) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (101255) Sensor Data: 09 [0m
+[0;32mI (101385) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (101385) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (101385) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (101385) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (101395) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (101405) Sensor Data: 09 [0m
+[0;32mI (101405) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (101415) Sensor Data: 09 [0m
+[0;32mI (102205) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (102205) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (102205) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (102205) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (102215) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (102225) Sensor Data: 09 [0m
+[0;32mI (102225) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (102235) Sensor Data: 09 [0m
+[0;32mI (102445) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (102445) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (102445) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (102445) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (102455) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (102465) Sensor Data: 09 [0m
+[0;32mI (102465) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (102475) Sensor Data: 09 [0m
+[0;32mI (103235) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (103235) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (103235) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (103245) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (103245) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (103255) Sensor Data: 09 [0m
+[0;32mI (103255) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (103265) Sensor Data: 09 [0m
+[0;32mI (103405) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (103405) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (103405) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (103405) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (103415) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (103425) Sensor Data: 09 [0m
+[0;32mI (103425) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (103435) Sensor Data: 09 [0m
+[0;32mI (104245) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (104245) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (104245) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (104245) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (104255) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (104265) Sensor Data: 09 [0m
+[0;32mI (104265) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (104275) Sensor Data: 09 [0m
+[0;32mI (104445) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (104445) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (104445) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (104445) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (104455) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (104465) Sensor Data: 09 [0m
+[0;32mI (104465) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (104475) Sensor Data: 09 [0m
+[0;32mI (105425) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (105425) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (105425) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (105425) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (105435) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (105445) Sensor Data: 09 [0m
+[0;32mI (105445) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (105455) Sensor Data: 09 [0m
+[0;32mI (106245) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (106245) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (106245) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (106245) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (106255) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (106265) Sensor Data: 09 [0m
+[0;32mI (106265) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (106275) Sensor Data: 09 [0m
+[0;32mI (106485) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (106485) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (106485) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (106485) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (106495) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (106505) Sensor Data: 09 [0m
+[0;32mI (106505) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (106515) Sensor Data: 09 [0m
+[0;32mI (107285) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (107285) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (107285) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (107295) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (107295) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (107305) Sensor Data: 09 [0m
+[0;32mI (107305) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (107315) Sensor Data: 09 [0m
+[0;32mI (107485) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (107485) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (107485) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (107485) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (107495) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (107495) Sensor Data: 09 [0m
+[0;32mI (107505) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (107505) Sensor Data: 09 [0m
+[0;32mI (108265) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (108265) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (108265) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (108265) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (108275) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (108275) Sensor Data: 09 [0m
+[0;32mI (108285) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (108285) Sensor Data: 09 [0m
+[0;32mI (108485) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (108485) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (108485) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (108485) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (108495) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (108505) Sensor Data: 09 [0m
+[0;32mI (108505) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (108515) Sensor Data: 09 [0m
+[0;32mI (109305) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (109305) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (109305) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (109305) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (109315) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (109325) Sensor Data: 09 [0m
+[0;32mI (109325) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (109335) Sensor Data: 09 [0m
+[0;32mI (109465) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (109465) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (109465) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (109465) Sensor Data: c0 0a 09 60 0b 09 [0m
+[0;32mI (109475) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x0056[0m
+[0;32mI (109485) Sensor Data: 09 [0m
+[0;32mI (109485) EXAMPLE: Format A, length 0x00, Sensor Property ID 0x005b[0m
+[0;32mI (109495) Sensor Data: 09 [0m
+[0;32mI (110285) EXAMPLE: Sensor client, event 2  addr 0x00e0  [0m
+[0;32mI (110285) EXAMPLE: ---dest addr  0xc000  [0m
+[0;32mI (110285) EXAMPLE: Sensor Status, opcode 0x0052[0

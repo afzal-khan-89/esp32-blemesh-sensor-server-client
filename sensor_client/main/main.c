@@ -294,7 +294,7 @@ static void example_ble_mesh_sensor_client_cb(esp_ble_mesh_sensor_client_cb_even
     //esp_ble_mesh_node_t *node = NULL;
 
     ESP_LOGI(TAG, "Sensor client, event %u  addr 0x%04x  ", event, param->params->ctx.addr);
-    ESP_LOGI(TAG, " opcode 0x%04" PRIx32, param->params->opcode);
+    ESP_LOGI(TAG, "---dest addr  0x%04x  ", param->params->ctx.recv_dst);  
 
     if (param->error_code) 
     {
